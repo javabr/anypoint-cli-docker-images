@@ -2,31 +2,12 @@
 
 This is an easy way to run anypoint-cli and anypoint-cli-v4 side by side without messing with your Node and NPM installs.
 
-## requirements
+## Requirements
 You will need docker installed in order to run the container images: https://docs.docker.com/engine/install/
 
-## how to use it:
+## How to use it:
 
-1) Go to the anypoint cli version that you need to use:
-
-```
-cd anypoint-cli
-```
-or
-```
-cd anypoint-cli-v4
-```
-
-2) Getting the images:
-You have two options: 
-*a) Build them locally:*
-```
-docker build . -t anypoint-cli
-```
-```
-docker build . -t anypoint-cli-v4
-```
-*b) Pull the images from the docker repo:*
+*Pull the images from the docker repo:*
 ```
 docker pull javabr/anypoint-cli
 ```
@@ -34,7 +15,7 @@ docker pull javabr/anypoint-cli
 docker pull javabr/anypoint-cli-v4
 ```
 
-3) That is all folks! Run any cli commands:
+*That is all folks! Run any cli commands:*
 
 ```
 docker run anypoint-cli exchange asset list Salesforce \
